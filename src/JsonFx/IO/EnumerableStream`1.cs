@@ -211,7 +211,7 @@ namespace JsonFx.IO
 		{
 			if (disposing)
 			{
-				((IDisposable)this.Enumerator).Dispose();
+				Enumerator.Dispose();
 			}
 		}
 

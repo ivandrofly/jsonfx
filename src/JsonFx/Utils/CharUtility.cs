@@ -171,7 +171,7 @@ namespace JsonFx.Utils
 #else
 			if (char.IsSurrogate(value, index))
 			{
-				return ((int)value[index]);
+				return value[index];
 			}
 			else
 			{

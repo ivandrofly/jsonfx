@@ -235,7 +235,7 @@ namespace JsonFx.Html
 							if (attributes == null)
 							{
 								attributes = this.canonicalForm ?
-									(IDictionary<DataName, Token<MarkupTokenType>>)new CanonicalList() :
+									new CanonicalList() :
 									(IDictionary<DataName, Token<MarkupTokenType>>)new Dictionary<DataName, Token<MarkupTokenType>>();
 							}
 							DataName attrName = token.Name;

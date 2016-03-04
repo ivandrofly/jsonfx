@@ -352,7 +352,7 @@ namespace JsonFx.Bson
 							long ticks = (long)duration.TotalMilliseconds;
 
 							// write long data
-							writer.Write((long)ticks);
+							writer.Write(ticks);
 							total += BsonWriter.SizeOfInt64;
 							break;
 						}

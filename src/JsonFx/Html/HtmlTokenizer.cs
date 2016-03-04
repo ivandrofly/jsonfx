@@ -1682,7 +1682,7 @@ namespace JsonFx.Html
 		{
 			if (disposing)
 			{
-				((IDisposable)this.Scanner).Dispose();
+                this.Scanner.Dispose();
 			}
 		}
 

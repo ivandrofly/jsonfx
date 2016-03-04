@@ -538,7 +538,7 @@ namespace JsonFx.Serialization
 				ModelGrammar.TokenProperty("AnotherString"),
 				ModelGrammar.TokenPrimitive("Foo."),
 				ModelGrammar.TokenProperty("AnInt64"),
-				ModelGrammar.TokenPrimitive( ((long)Int32.MaxValue) * 2L ),
+				ModelGrammar.TokenPrimitive( Int32.MaxValue * 2L ),
 				ModelGrammar.TokenObjectEnd,
 				ModelGrammar.TokenProperty("ADouble"),
 				ModelGrammar.TokenPrimitive(Math.PI),
@@ -552,7 +552,7 @@ namespace JsonFx.Serialization
 				AnAnonymous = new
 				{
 					AnotherString = "Foo.",
-					AnInt64 = ((long)Int32.MaxValue) * 2L
+					AnInt64 = Int32.MaxValue * 2L
 				},
 				ADouble = Math.PI
 			};

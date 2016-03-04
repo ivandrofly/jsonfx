@@ -1260,7 +1260,7 @@ namespace JsonFx.CodeGen
 			ArgumentNullException ex = Assert.Throws<ArgumentNullException>(
 				delegate()
 				{
-					FactoryDelegate factory = DynamicMethodGenerator.GetTypeFactory((Type)null, Type.EmptyTypes);
+					FactoryDelegate factory = DynamicMethodGenerator.GetTypeFactory(null, Type.EmptyTypes);
 				});
 
 			Assert.Equal("type", ex.ParamName);
